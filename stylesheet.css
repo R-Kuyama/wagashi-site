@@ -1,0 +1,45 @@
+* {
+    font-family: 'Noto Serif JP', serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;    /* デフォルトで16pxなので計算しやすいよう62.5%で10pxにする */
+}
+
+body {
+    font-size: 1.6em;    /* 親要素の10px*1.6で16pxにする（html,bodyと分けて書かないと上手く動作しない可能性がある） */
+}
+
+li {
+    list-style: none;
+}
+
+/* ここから header */
+header {
+    width: 100%;    /* 背景画像を横100%にする */
+    height: 100vh;    /* 縦はビューポート100%にする */
+    background-image: url(img/mainvisual-pc.jpg);
+    background-size: cover;
+    writing-mode: vertical-rl;    /* 縦書きにする、親要素に設定しないとコンテンツ縦幅がいっぱいにならない */
+}
+
+.header-text {
+    color: white;
+    line-height: 1;    /* 無駄な余白を無くす */
+    padding-right: 80px;
+    padding-top: 60px;
+}
+
+.header-text h1 {
+    font-size: 4.4rem;
+    padding-left: 60px;
+    letter-spacing: 0.3em;    /* 文字間隔を空ける */
+}
+
+.header-text li {
+    padding-left: 25px;
+    letter-spacing: 0.1em;    /* 文字間隔を空ける */
+}
