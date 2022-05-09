@@ -11,19 +11,26 @@ html {
 
 body {
     font-size: 1.6em;    /* 親要素の10px*1.6で16pxにする（html,bodyと分けて書かないと上手く動作しない可能性がある） */
+    background-color: #e6e2d7;
 }
 
 li {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* ここから header */
 header {
+    writing-mode: vertical-rl;    /* 縦書きにする、親要素に設定しないとコンテンツ縦幅がいっぱいにならない */
     width: 100%;    /* 背景画像を横100%にする */
     height: 100vh;    /* 縦はビューポート100%にする */
     background-image: url(img/mainvisual-pc.jpg);
-    background-size: cover;
-    writing-mode: vertical-rl;    /* 縦書きにする、親要素に設定しないとコンテンツ縦幅がいっぱいにならない */
+    background-size: cover;    /* ビューポートを覆うように自動で伸縮 */
+    background-position: center top;    /* 画像をセンタートップを保って表示する */
+    margin-bottom: 180px;
 }
 
 .header-text {
@@ -41,5 +48,52 @@ header {
 
 .header-text li {
     padding-left: 25px;
-    letter-spacing: 0.1em;    /* 文字間隔を空ける */
+}
+
+.store-btn {
+    background-color: rgba(255,255,255,0.2);
+    position: absolute;    /* 親要素を基準に絶対値で位置を指定 */
+    left: 40px;
+    bottom: 30px;
+    padding: 8px;
+}
+
+.store-btn a {
+    color: white;
+    display: block;    /* インラインだと親要素のパディング(8px)がボーダー基準ではなくコンテンツ基準になるため */
+    padding: 30px 18px;
+    border: 1px solid white;
+}
+
+/* ここから .main */
+.main {
+    
+}
+
+/* ここから #news */
+#news {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 180px;
+    padding: 0 20px;
+}
+
+#news h2 {
+    writing-mode: vertical-rl;
+    line-height: 1;
+}
+
+#news span {
+    display: block;
+}
+
+#news dl {
+    writing-mode: vertical-rl;
 }
