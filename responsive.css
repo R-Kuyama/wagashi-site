@@ -1,0 +1,115 @@
+/* ブレイクポイント768px スマホ向けメディアクエリ */
+@media (max-width: 768px) {
+    /* ここから header */
+    header {
+        background-image: url(img/mainvisual-sp.jpg);
+        margin-bottom: 80px;
+        padding: 20px;
+    }
+    
+    .store-btn {
+        left: 20px;
+        bottom: 20px;
+    }
+    
+    .news-title {
+        font-size: 3rem;
+    }
+    
+    /* ここから .main */
+    .container {
+        margin-bottom: 100px;
+    }
+    
+    /* ここから #news */
+    #news dl {
+        padding: 20px 30px 0 0;
+    }
+    
+    /* 4番目以降の dt,dd を非表示にする */
+    #news dt:nth-of-type(n+4), dd:nth-of-type(n+4) {
+        display: none;
+    }
+    
+    #news dt {
+        padding: 15px 12px 15px 5px;
+    }
+    
+    #news dd {
+        padding: 15px 0 15px 12px;
+    }
+    
+    /* 3番目の dd に左側ボーダー入れる */
+    #news dd:nth-of-type(3) {
+        border-left: 1px solid #000;
+    }
+    
+    /* ここから #products1 */
+    #products1 h2 {
+        margin-left: 10px;
+    }
+    
+    .products1-title {
+        font-size: 2.4rem;
+    }
+    
+    .products1-tag {
+        display: none;
+    }
+    
+    .products1-img {
+        width: 100%;
+        margin-top: 70px;
+    }
+    
+    .products1-img p {
+        width: 64%;
+        font-size: 1.4rem;
+        padding: 30px 0;
+    }
+    
+    /* ここから #products2 */
+    #products2 h2 {
+        margin-right: 10px;
+    }
+    
+    .products2-title {
+        font-size: 2.4rem;
+    }
+    
+    .products2-tag {
+        display: none;
+    }
+    
+    .products2-img {
+        width: 100%;
+        margin-top: 70px;
+    }
+    
+    .products2-img p {
+        width: 64%;
+        font-size: 1.4rem;
+        padding: 30px 0;
+    }
+    
+    /* ここから footer */
+    footer {
+    padding: 40px 20px 30px 20px;
+    }
+    
+    .right-logo {
+        margin-left: 25px;
+    }
+    
+    .right-list {
+        margin-right: 25px;
+    }
+    
+    .right-list li {
+        margin-left: 10px;
+    }
+    
+    .right-list a {
+        font-size: 1.2rem;
+    }
+}
