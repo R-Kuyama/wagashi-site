@@ -20,6 +20,7 @@ li {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 /* ここから header */
@@ -59,7 +60,6 @@ header {
 }
 
 .store-btn a {
-    color: white;
     display: block;    /* インラインだと親要素のパディング(8px)がボーダー基準ではなくコンテンツ基準になるため */
     padding: 30px 18px;
     border: 1px solid white;
@@ -250,10 +250,6 @@ footer {
 .right-info {
     font-size: 1.4rem;
     line-height: 2;
-}
-
-.right-info a {
-    color: white;
 }
 
 .right-list {
