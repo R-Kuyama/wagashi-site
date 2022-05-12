@@ -14,7 +14,11 @@ document.getElementById('news-btn1').addEventListener('click', (e) => {
     const newsTarget = news + newsOffset - 5;
     
     // 横と縦(x,y)位置を指定してスクロールする
-    window.scrollTo(0, newsTarget);
+    window.scrollTo({
+        top: newsTarget,
+        left: 0,
+        behavior: 'smooth'
+    });
 });
 
 // #news-btn2 クリックで #news へスクロールする
@@ -23,7 +27,11 @@ document.getElementById('news-btn2').addEventListener('click', (e) => {
     const news = document.getElementById('news').getBoundingClientRect().top;
     const newsOffset = window.pageYOffset;
     const newsTarget = news + newsOffset - 5;
-    window.scrollTo(0, newsTarget);
+    window.scrollTo({
+        top: newsTarget,
+        left: 0,
+        behavior: 'smooth'
+    });
 });
 
 // #products-btn1 クリックで #products1 へスクロールする
@@ -32,7 +40,11 @@ document.getElementById('products-btn1').addEventListener('click', (e) => {
     const products = document.getElementById('products1').getBoundingClientRect().top;
     const productsOffset = window.pageYOffset;
     const productsTarget = products + productsOffset - 5;
-    window.scrollTo(0, productsTarget);
+    window.scrollTo({
+        top: productsTarget,
+        left: 0,
+        behavior: 'smooth'
+    });
 });
 
 // #products-btn2 クリックで #products1 へスクロールする
@@ -41,7 +53,11 @@ document.getElementById('products-btn2').addEventListener('click', (e) => {
     const products = document.getElementById('products1').getBoundingClientRect().top;
     const productsOffset = window.pageYOffset;
     const productsTarget = products + productsOffset - 5;
-    window.scrollTo(0, productsTarget);
+    window.scrollTo({
+        top: productsTarget,
+        left: 0,
+        behavior: 'smooth'
+    });
 });
 
 // shop-btn1 クリックで #shop へスクロールする
@@ -50,7 +66,11 @@ document.getElementById('shop-btn1').addEventListener('click', (e) => {
     const shop = document.getElementById('shop').getBoundingClientRect().top;
     const shopOffset = window.pageYOffset;
     const shopTarget = shop + shopOffset - 5;
-    window.scrollTo(0, shopTarget);
+    window.scrollTo({
+        top: shopTarget,
+        left: 0,
+        behavior: 'smooth'
+    });
 });
 
 // shop-btn2 クリックで #shop へスクロールする
@@ -59,5 +79,9 @@ document.getElementById('shop-btn2').addEventListener('click', (e) => {
     const shop = document.getElementById('shop').getBoundingClientRect().top;
     const shopOffset = window.pageYOffset;
     const shopTarget = shop + shopOffset - 5;
-    window.scrollTo(0, shopTarget);
+    window.scrollTo({
+        top: shopTarget,
+        left: 0,
+        behavior: 'smooth'
+    });
 });
