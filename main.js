@@ -15,8 +15,8 @@ document.getElementById('news-btn1').addEventListener('click', (e) => {
     
     // 横と縦(x,y)位置を指定してスクロールする
     window.scrollTo({
-        top: newsTarget,
         left: 0,
+        top: newsTarget,
         behavior: 'smooth'
     });
 });
@@ -28,8 +28,8 @@ document.getElementById('news-btn2').addEventListener('click', (e) => {
     const newsOffset = window.pageYOffset;
     const newsTarget = news + newsOffset - 5;
     window.scrollTo({
-        top: newsTarget,
         left: 0,
+        top: newsTarget,
         behavior: 'smooth'
     });
 });
@@ -41,8 +41,8 @@ document.getElementById('products-btn1').addEventListener('click', (e) => {
     const productsOffset = window.pageYOffset;
     const productsTarget = products + productsOffset - 5;
     window.scrollTo({
-        top: productsTarget,
         left: 0,
+        top: productsTarget,
         behavior: 'smooth'
     });
 });
@@ -54,8 +54,8 @@ document.getElementById('products-btn2').addEventListener('click', (e) => {
     const productsOffset = window.pageYOffset;
     const productsTarget = products + productsOffset - 5;
     window.scrollTo({
-        top: productsTarget,
         left: 0,
+        top: productsTarget,
         behavior: 'smooth'
     });
 });
@@ -67,8 +67,8 @@ document.getElementById('shop-btn1').addEventListener('click', (e) => {
     const shopOffset = window.pageYOffset;
     const shopTarget = shop + shopOffset - 5;
     window.scrollTo({
-        top: shopTarget,
         left: 0,
+        top: shopTarget,
         behavior: 'smooth'
     });
 });
@@ -80,8 +80,8 @@ document.getElementById('shop-btn2').addEventListener('click', (e) => {
     const shopOffset = window.pageYOffset;
     const shopTarget = shop + shopOffset - 5;
     window.scrollTo({
-        top: shopTarget,
         left: 0,
+        top: shopTarget,
         behavior: 'smooth'
     });
 });
